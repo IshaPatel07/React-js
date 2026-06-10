@@ -4,6 +4,7 @@ const Todos = () => {
   const [todos, setTodos] = useState([{ title: "workout at 6AM" }]);
   const [title, setTitle] = useState("");
   return (
+    
     <>
       <section>
         <div className="container">
