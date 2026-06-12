@@ -8,6 +8,22 @@ const realpass = "09052024";
 export default function Home() {
   const navigate = useNavigate();
 
+  const getemail = (e) => {
+    setPass(e.target.value);
+  };
+
+  const getpassword = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlelogin = () => {
+    if (realemail == email && realpass == pass) {
+      navigate("/Nav");
+    } else {
+      alert("again enter email and pass");
+    }
+  };
+
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   return (
@@ -23,9 +39,7 @@ export default function Home() {
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             placeholder="Enter your Email"
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
+            onChange={getemail}
           />
           <div id="emailHelp" className="form-text">
             We'll never share your email with anyone else.
@@ -40,23 +54,11 @@ export default function Home() {
             className="form-control"
             id="exampleInputPassword1"
             placeholder="Enter your password"
-            onChange={(e) => {
-              setPass(e.target.value);
-            }}
+            onChange={getpassword}
           />
         </div>
 
-        <button
-          onClick={() => {
-            if (realemail == email && realpass == pass) {
-              navigate("/Nav");
-            } else {
-              alert("again enter email and pass");
-            }
-          }}
-          type="submit"
-          className="btn btn-primary"
-        >
+        <button onClick={handlelogin} type="submit" className="btn btn-primary">
           Submit
         </button>
       </form>
