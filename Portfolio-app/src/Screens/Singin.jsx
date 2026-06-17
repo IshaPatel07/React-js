@@ -22,7 +22,7 @@ export default function Singin() {
 
   const handlelogin = () => {
     if (realemail == email && realpass == pass) {
-      navigate("/Home");
+      navigate("/home");
     } else {
       alert("again enter email and pass");
     }
@@ -43,7 +43,6 @@ export default function Singin() {
             placeholder="Enter your Email"
             onChange={getemail}
           />
-          
         </div>
         <div className="mb-3 container">
           <label htmlFor="exampleInputPassword1" className="form-label">
@@ -58,7 +57,7 @@ export default function Singin() {
           />
         </div>
 
-        <button  onClick={handlelogin} type="submit" className="btn btn-primary">
+        <button onClick={handlelogin} type="submit" className="btn btn-primary">
           Submit
         </button>
 
