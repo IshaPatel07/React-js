@@ -28,8 +28,18 @@ export default function Form() {
     setStudent({ ...student, addrest: e.target.value });
   };
 
+  const formValid =
+    student.name &&
+    student.email &&
+    student.phone &&
+    student.gender &&
+    student.skill &&
+    student.city &&
+    student.addrest;
+
   const handlesubbmit = () => {
     navigate("/user");
+    disabled = !formValid;
     localStorage.setItem("studentdata", JSON.stringify(student));
   };
 
