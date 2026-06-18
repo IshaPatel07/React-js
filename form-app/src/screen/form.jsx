@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router";
+import user from "./user";
 
 export default function Form() {
+  const navigate = useNavigate();
   const [student, setStudent] = useState({ skill: [] });
 
   const getName = (e) => {
@@ -26,7 +29,8 @@ export default function Form() {
   };
 
   const handlesubbmit = () => {
-    console.log(student);
+    navigate("/user");
+    localStorage.setItem("studentdata", JSON.stringify(student));
   };
 
   return (
@@ -52,7 +56,7 @@ export default function Form() {
           <div className="d-flex justify-content-center mt-3">
             <input
               onChange={getPhone}
-              type="number"
+              type="text"
               placeholder="Enter Your Phone"
             />
           </div>
