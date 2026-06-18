@@ -19,7 +19,7 @@ export default function user() {
           <p> Email : {data?.email}</p>
         </div>
         <div className="">
-          <p>Number : {data?.Phone}</p>
+          <p>Number : {data?.phone}</p>
         </div>
         <div className="">
           <p>Gender : {data?.gender}</p>
