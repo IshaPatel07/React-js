@@ -1,0 +1,134 @@
+{
+    "user":[
+       {
+  "id": 1,
+  "name": "John Doe",
+  "age": 28,
+  "email": "john.doe@example.com",
+  "isActive": true,
+  "skills": [
+    "JavaScript",
+    "Python",
+    "SQL"
+  ],
+  "address": {
+    "street": "123 Main Street",
+    "city": "New York",
+    "country": "USA"
+  }
+}
+    ],
+    
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Mouse",
+      "category": "Electronics",
+      "brand": "LogiTech",
+      "price": 24.99,
+      "currency": "USD",
+      "stock": 150,
+      "rating": 4.5,
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "name": "Mechanical Keyboard",
+      "category": "Electronics",
+      "brand": "KeyPro",
+      "price": 79.99,
+      "currency": "USD",
+      "stock": 75,
+      "rating": 4.7,
+      "inStock": true
+    },
+    {
+      "id": 3,
+      "name": "Bluetooth Speaker",
+      "category": "Audio",
+      "brand": "SoundWave",
+      "price": 49.99,
+      "currency": "USD",
+      "stock": 120,
+      "rating": 4.4,
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "name": "USB-C Charger",
+      "category": "Accessories",
+      "brand": "ChargeMax",
+      "price": 19.99,
+      "currency": "USD",
+      "stock": 200,
+      "rating": 4.3,
+      "inStock": true
+    },
+    {
+      "id": 5,
+      "name": "Smart Watch",
+      "category": "Wearables",
+      "brand": "FitTech",
+      "price": 199.99,
+      "currency": "USD",
+      "stock": 40,
+      "rating": 4.6,
+      "inStock": true
+    },
+    {
+      "id": 6,
+      "name": "Gaming Headset",
+      "category": "Gaming",
+      "brand": "GameZone",
+      "price": 59.99,
+      "currency": "USD",
+      "stock": 90,
+      "rating": 4.5,
+      "inStock": true
+    },
+    {
+      "id": 7,
+      "name": "Portable SSD 1TB",
+      "category": "Storage",
+      "brand": "FastDrive",
+      "price": 129.99,
+      "currency": "USD",
+      "stock": 65,
+      "rating": 4.8,
+      "inStock": true
+    },
+    {
+      "id": 8,
+      "name": "HD Webcam",
+      "category": "Accessories",
+      "brand": "VisionCam",
+      "price": 39.99,
+      "currency": "USD",
+      "stock": 110,
+      "rating": 4.2,
+      "inStock": true
+    },
+    {
+      "id": 9,
+      "name": "Laptop Backpack",
+      "category": "Bags",
+      "brand": "TravelGear",
+      "price": 54.99,
+      "currency": "USD",
+      "stock": 85,
+      "rating": 4.6,
+      "inStock": true
+    },
+    {
+      "id": 10,
+      "name": "LED Desk Lamp",
+      "category": "Home Office",
+      "brand": "BrightLite",
+      "price": 34.99,
+      "currency": "USD",
+      "stock": 130,
+      "rating": 4.4,
+      "inStock": true
+    }
+  ]
+}
