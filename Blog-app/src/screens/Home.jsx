@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 import BlogCard from "../components/BlogCard";
 import searchBar from "../components/searchBar";
-import filterBar from "../components/.   filterBar";
+import filterBar from "../components/  filterBar";
 import EmptyState from "../components/EmptyState";
 
 function Home() {
@@ -43,13 +43,13 @@ function Home() {
       </h2>
 
       {/* Search */}
-      <SearchBar
+      <searchBar
         search={search}
         setSearch={setSearch}
       />
 
       {/* Filters */}
-      <FilterBar
+      <filterBar
         category={category}
         setCategory={setCategory}
         date={date}
