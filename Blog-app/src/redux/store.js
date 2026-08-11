@@ -4,6 +4,6 @@ import blogreducer from './blogslice'
 export const store =
     configureStore({
         reducer: {
-            blog: blogreducer,
+            blogs: blogreducer,
         },
     })
