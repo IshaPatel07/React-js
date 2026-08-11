@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 
 import BlogCard from "../components/BlogCard";
-import SearchBar from "../components/SearchBar";
+import searchBar from "../components/searchBar";
 import filterBar from "../components/.   filterBar";
 import EmptyState from "../components/EmptyState";
 
