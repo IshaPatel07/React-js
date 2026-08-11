@@ -1,27 +1,63 @@
-import { createSlice } from "@reduxjs/toolkit"
-import { createAsyncThunk } from "@reduxjs/toolkit"
-import { axios } from "axios"
+import { createSlice } from "@reduxjs/toolkit";
+import { v4 as uuidv4 } from "uuid";
 
-const fetchBlogs = createAsyncThunk("fetch/blogs", async () => {
-    try {
-        const res = await axios.get("http://localhost:3000/blogs")
-        return res.data;
-    } catch (error) {
-        throw error
-    }
-})
+const loadBlogs = () => {
+  const blogs = localStorage.getItem("blogs");
+  return blogs ? JSON.parse(blogs) : [];
+};
 
+const saveBlogs = (blogs) => {
+  localStorage.setItem("blogs", JSON.stringify(blogs));
+};
 
-const blogsAuth = createSlice({
-    name: "blogs",
-    initialState: {
-        blogs: [],
-        error: null,
-        loader: false
+const initialState = {
+  blogs: loadBlogs(),
+};
+
+const blogSlice = createSlice({
+  name: "blogs",
+  initialState,
+
+  reducers: {
+    // Add Blog
+    addBlog: (state, action) => {
+      const newBlog = {
+        id: uuidv4(),
+        title: action.payload.title,
+        description: action.payload.description,
+        category: action.payload.category,
+        date: action.payload.date,
+      };
+
+      state.blogs.push(newBlog);
+      saveBlogs(state.blogs);
     },
-    reducers: {},
-    extraReducers: (builder) => {
 
-    }
-})
-export default blogsAuth.reducer
+    deleteBlog: (state, action) => {
+      state.blogs = state.blogs.filter(
+        (blog) => blog.id !== action.payload
+      );
+
+      saveBlogs(state.blogs);
+    },
+
+    updateBlog: (state, action) => {
+      const index = state.blogs.findIndex(
+        (blog) => blog.id === action.payload.id
+      );
+
+      if (index !== -1) {
+        state.blogs[index] = action.payload;
+        saveBlogs(state.blogs);
+      }
+    },
+  },
+});
+
+export const {
+  addBlog,
+  deleteBlog,
+  updateBlog,
+} = blogSlice.actions;
+
+export default blogSlice.reducer;
