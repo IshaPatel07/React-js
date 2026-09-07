@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "name": "isha patel",
+        "email": "isha.@gmail.com",
+        "city": "Mumbai",
+        "address": "12 MG Road, Andheri West"
+    },
+    {
+        "id": 2,
+        "name": "Neha Patel",
+        "email": "neha.patel@gmail.com",
+        "city": "Surat",
+        "address": "45 Ring Road, Adajan"
+    },
+    {
+        "id": 3,
+        "name": "Arjun Mehta",
+        "email": "arjun.mehta@gmail.com",
+        "city": "Ahmedabad",
+        "address": "23 CG Road, Navrangpura"
+    },
+    {
+        "id": 4,
+        "name": "Pooja Shah",
+        "email": "pooja.shah@gmail.com",
+        "city": "Vadodara",
+        "address": "18 Alkapuri Road, Alkapuri"
+    },
+    {
+        "id": 5,
+        "name": "Karan Joshi",
+        "email": "karan.joshi@gmail.com",
+        "city": "Jaipur",
+        "address": "67 MI Road, C-Scheme"
+    },
+    {
+        "id": 6,
+        "name": "Riya Kapoor",
+        "email": "riya.kapoor@gmail.com",
+        "city": "Pune",
+        "address": "34 FC Road, Shivajinagar"
+    },
+    {
+        "id": 7,
+        "name": "Vivek Verma",
+        "email": "vivek.verma@gmail.com",
+        "city": "Indore",
+        "address": "29 Vijay Nagar, Scheme No. 54"
+    },
+    {
+        "id": 8,
+        "name": "Sneha Patel",
+        "email": "sneha.patel@gmail.com",
+        "city": "Rajkot",
+        "address": "51 Kalawad Road, Mavdi"
+    },
+    {
+        "id": 9,
+        "name": "Rohit Desai",
+        "email": "rohit.desai@gmail.com",
+        "city": "Mumbai",
+        "address": "88 Linking Road, Bandra West"
+    },
+    {
+        "id": 10,
+        "name": "Anjali Gupta",
+        "email": "anjali.gupta@gmail.com",
+        "city": "Delhi",
+        "address": "16 Lajpat Nagar Central Market"
+    },
+    {
+        "id": 11,
+        "name": "Harsh Trivedi",
+        "email": "harsh.trivedi@gmail.com",
+        "city": "Ahmedabad",
+        "address": "72 Satellite Road, Satellite"
+    },
+    {
+        "id": 12,
+        "name": "Simran Joshi",
+        "email": "simran.joshi@gmail.com",
+        "city": "Nashik",
+        "address": "41 College Road, Gangapur Road"
+    },
+    {
+        "id": 13,
+        "name": "Yash Thakur",
+        "email": "yash.thakur@gmail.com",
+        "city": "Bhopal",
+        "address": "25 MP Nagar, Zone 2"
+    },
+    {
+        "id": 14,
+        "name": "Ananya Singh",
+        "email": "ananya.singh@gmail.com",
+        "city": "Lucknow",
+        "address": "39 Hazratganj Road, Hazratganj"
+    },
+    {
+        "id": 15,
+        "name": "Dhruv Patel",
+        "email": "dhruv.patel@gmail.com",
+        "city": "Gandhinagar",
+        "address": "14 Sector 21, Near Infocity"
+    }
+]
